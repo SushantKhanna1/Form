@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header>
+        <h1 id="Shead">
+            <br/> Lecture 7 Lab: Web Form</h1>
+        <p id="start"><br/><strong> Field with * are required </strong> </p>
+
+    </header>
+    <section>
+        <form id="survey" action="https://formspree.io/f/xayvbnll" method="post">
+
+            <fieldset id="StudentInfo">
+
+                <legend> Your Personal Information </legend>
+
+                <div class="formRow ">
+                    <label for="name " style="width: 20% ">Full Name*:</label>
+                    <input name="StudentName " id="name " type="text " placeholder="First and last name " required style=" width:40% ;float:right " />
+                </div>
+                <br/>
+                <div class="formRow ">
+                    <label for="email " style="width: 20% ">Email Address*:</label>
+                    <input name="Studentemail " id="email " type="email " placeholder="someone@somewhere.com " required style=" width:40% ;float:right " />
+                </div>
+                <br/>
+                <div class="formRow ">
+                    <label for="college " style="width: 20%; ">Current study:</label>
+                    <input name="Studentcollege " id="college " type="text " value="Douglas College " style=" width:40% ;float:right " />
+                </div>
+                <br/>
+                <div class="formRow ">
+                    <label for="age " style="width: 20%; ">Age:</label>
+                    <input name="Studentage " id="age " type="number " value="20 " style=" width:40% ;float:right " /></div>
+                <br/>
+            </fieldset>
+
+
+            <fieldset id="expInfo">
+
+                <legend> Your Quiz </legend>
+                <div class="formRow ">
+
+                    <p> 1.What is the result of following equation?</p>
+                    <label for="maths">2<sup>2</sup>*5=</label>
+                    <input name="answer1" id="maths" type="number " />
+                </div>
+                <br/>
+                <div class="formRow ">
+                    <label for="fullform">2. What does the acronym W3C stand for?</label>
+                    <select name="answer2 " id="fullform">
+                        <option value="3rd World War Coalition "> 3 <sup> rd </sup> World War Coalition </option>
+            <option value="World Wide WarCraft ">World Wide WarCraft</option>
+            <option value="World Wide Web Consortium ">World Wide Web Consortium</option>
+            <option value="I’m afraid to answer it ">I’m afraid to answer it</option>
+            </select>
+                </div>
+                <br/>
+                <div class="formRow ">
+
+                    <p> 3.CSS is an abbreviation of
+
+                        <input name="answer3 " id="equation " type="text " /> stylesheet
+                    </p>
+                </div>
+                <br/>
+                <div class="formRow">
+
+                    <label for="info "> 4. Select all the (scripting) languages we learn in CSIS 1280?<br /></label>
+
+                    <label><input type="checkbox" name="answer4 " value="HTML" /> HTML</label>
+                    <label><input type="checkbox" name="answer4 " value="CSS"/> CSS</label>
+                    <label><input type="checkbox" name="answer4 " value="Javascript" /> Javascript</label>
+                    <label><input type="checkbox" name="answer4 " value="PHP" /> PHP</label>
+                    <label><input type="checkbox" name="answer4 " value="C#" /> C#</label>
+                    <label><input type="checkbox" name="answer4 " value="Java" /> Java</label>
+
+                </div>
+                <br/>
+                <div class="formRow">
+
+                    <label for="info "> 5. Consider the picture of DOM structure below. Which of the following <strong>CANNOT </strong> be used to select all the &lt;p&gt; elements? <br /></label>
+
+                    <div class="abc">
+                        <label><input type="radio" name="answer5" value="p " /> p<br /></label>
+                        <label><input type="radio" name="answer5" value="h1~p " /> h1~p<br /></label>
+                        <label><input type="radio" name="answer5" value="article p " /> article p<br /></label>
+                        <label><input type="radio" name="answer5" value="article> p" /> article > p <br /></label>
+                        <label><input type="radio" name="answer5" value="h1+p"/> h1+p<br /></label><br/>
+                    </div>
+
+
+                    <div class="xyz">
+                        <img src="images/q5.PNG" />
+                    </div>
+                </div>
+
+                <br/>
+                <div class="formRow">
+
+                    <label for="info "> 6. Consider the picture of DOM structure below. Which of the following selector <strong>CAN </strong> be used to select all the identified &lt;li&gt; elements? <br /></label>
+
+                    <div class="abc">
+                        <label><input type="radio" name="answer6" value="li"/> li<br /></label>
+                        <label><input type="radio" name="answer6" value="li:nth-child(2n+1)" /> li:nth-child(2n+1)<br /></label>
+                        <label><input type="radio"name="answer6" value="ul > li:(2n+1)" /> ul > li:(2n+1) <br /></label>
+                        <label><input type="radio"name="answer6" value="ul > li" /> ul > li <br /></label>
+                        <label><input type="radio" name="answer6"value="ul > li(2n+1)" /> ul > li(2n+1)<br /></label>
+                    </div>
+                    <div class="xyz">
+                        <img src="images/q6.PNG" />
+                    </div>
+
+
+                </div>
+
+                <br/>
+                <div class="formRow">
+                    <div class="final">
+                        <label>7.Douglas College and the Coquitlam campus was named after the Governor and Liutenant-Governor of British Columbia.What are their names? </label> <br/>
+                    </div>
+                    <div>
+                        <textarea id="story" name="answer7" rows="3">
+                        </textarea>
+
+                    </div>
+
+
+                </div>
+
+            </fieldset>
+    </section>
+    <footer>
+        <div id="button">
+            <input type="submit" value="Submit My Quiz" />
+            <input type="reset" value="Cancel" />
+        </div> <br/>
+
+        </form>
+    </footer>
+
+</body>
+
+</html>

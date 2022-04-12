@@ -1,0 +1,51 @@
+ #StudentInfo {
+     border: 1px solid black;
+     margin: 20px;
+     background-color: aqua;
+ }
+ 
+ #start {
+     color: red;
+     margin: 5px 20px;
+ }
+ 
+ legend {
+     border: 1px solid black;
+     background-color: pink;
+ }
+ 
+ #Shead {
+     color: black;
+     margin: 5px 20px;
+ }
+ 
+ #expInfo {
+     border: 1px solid black;
+     margin: 20px;
+     background-color: aquamarine;
+ }
+ 
+ #button {
+     margin: 5px 20px;
+ }
+ 
+ html {
+     background-color: lightgoldenrodyellow;
+ }
+ 
+ .abc {
+     display: block;
+     float: left;
+     width: 300px;
+ }
+ 
+ .xyz>img {
+     height: 150px;
+     width: 150px;
+ }
+ 
+ .final {
+     display: block;
+     float: left;
+     width: 445px;
+ }
